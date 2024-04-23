@@ -1,0 +1,114 @@
+/*posmotret*/
+html,
+body {
+    height: 100%;
+}
+
+
+html {
+font-family: sans-serif;
+}
+
+body {
+    background: rgb(205,155,157);
+    background: radial-gradient(circle, rgba(205,155,157,1) 0%, rgba(136,167,149,1) 100%);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table {
+    table-layout: fixed;
+    width: 95%;
+    font-size: 1rem;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+thead th:nth-child(2) {
+    width: 80%;
+}
+thead th:nth-child(3) {
+    width: 60%;
+}
+thead th:nth-child(4) {
+    width: 35%;
+}
+thead th:nth-child(5) {
+    width: 17%;
+}
+thead th:nth-child(6) {
+    width: 17%;
+}
+thead th:nth-child(7) {
+    width: 17%;
+}
+thead th:nth-child(8) {
+    width: 17%;
+}
+thead th:nth-child(9) {
+    width: 17%;
+}
+
+thead {
+    word-wrap: break-word;
+    text-align: center;
+    background: rgb(188,123,119);
+    background: linear-gradient(90deg, rgba(188,123,119,1) 0%, rgba(205,155,157,1) 100%);
+}
+
+thead th {
+    border: 1px solid #DBC7C9;
+}
+
+th,
+td {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+/*svetyaschiyesya shtuki*/
+tbody {
+    text-align: center;
+    tr {
+        &:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+    }
+}
+td {
+    position: relative;
+    &:hover {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(255,255,255,0.2);
+            z-index: -1;
+        }
+    }
+}
+
+
+caption {
+    font-size: 1.5em;
+    padding: 10px;
+    caption-side: bottom;
+    text-align: right;
+    color: #DBC7C9;
+}
+
+
